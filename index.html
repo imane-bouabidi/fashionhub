@@ -82,41 +82,41 @@
     <section id="third-section">
         <div class="faq">
             <h2>FAQ</h2>
-            <div class="question">
+            <button class="question">
                 <h3>question ici</h3>
-            </div>
+            </button>
             <div class="reponse">
                 <p>reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici </p>
             </div>
 
 
-            <div class="question">
+            <button class="question">
                 <h3>question ici</h3>
-            </div>
+            </button>
             <div class="reponse">
                 <p>reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici </p>
             </div>
 
 
-            <div class="question">
+            <button class="question">
                 <h3>question ici</h3>
-            </div>
+            </button>
             <div class="reponse">
                 <p>reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici </p>
             </div>
 
 
-            <div class="question">
+            <button class="question">
                 <h3>question ici</h3>
-            </div>
+            </button>
             <div class="reponse">
                 <p>reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici </p>
             </div>
 
 
-            <div class="question">
+            <button class="question">
                 <h3>question ici</h3>
-            </div>
+            </button>
             <div class="reponse">
                 <p>reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici reponse ici </p>
             </div>
@@ -156,5 +156,16 @@
             </div>
         </footer>
     </section>
+    <script>
+        const toggleButtons = document.querySelectorAll(".question");
+        const answers = document.querySelectorAll(".reponse");
+            // Ajouter des gestionnaires d'événement de clic à chaque bouton
+            toggleButtons.forEach((button, index) => {
+            button.addEventListener("click", function() {
+                // Basculez la classe "hidden" de la section FAQ associée pour l'afficher ou la masquer
+                answers[index].classList.toggle("reponse");
+            });
+        });
+    </script>
 </body>
 </html>
